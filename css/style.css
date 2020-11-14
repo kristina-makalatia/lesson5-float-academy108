@@ -1,0 +1,85 @@
+.test {
+	display: inline-block;
+}
+/*Pseudo elements*/
+
+/*Symbol*/
+/*.test::before {
+	content: ' \003D ';
+}*/
+/*Icon*/
+.test::before {
+	content: url('../img/smiley.gif')
+}
+/*Divider*/
+.test::after {
+	content: ' ';
+	width: 2px;
+	height: 20px;
+	background-color: red;
+	display: inline-block;
+	margin-left: 30px;
+}
+
+
+/*Float*/
+.text-wraper {
+	float: right;
+	width: 500px;
+	margin-left:30px;
+}
+.image-wraper {
+	float: right;
+	height: 150px;
+}
+.clear {
+	clear: both;
+}
+.wraper {
+	background-color: red;
+}
+
+
+
+
+.box1 {
+	background-color: grey;
+	width: 570px;
+	float: left;
+
+}
+.box2 {
+	background-color: yellow;
+	width: 570px;
+	float: right;
+}
+.box1 .box-image {
+	float: left;
+}
+.box1 .text-p {
+	float: right;
+	color: red;
+	width: 355px;
+}
+.box2 .box-image {
+	float: left;
+}
+.box2 .text-p {
+	float: right;
+	color: red;
+	width: 355px;
+}
+.box1 .read-more,
+.box2 .read-more {
+	float: right;
+}
+
+.wraper::after {
+	content: ' ';
+	clear: both;
+	display: block;
+}
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
